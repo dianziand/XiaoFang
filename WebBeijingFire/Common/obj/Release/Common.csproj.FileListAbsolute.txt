@@ -1,0 +1,5 @@
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\Common\bin\Release\Common.dll
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\Common\bin\Release\Common.pdb
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\Common\obj\Release\Common.dll
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\Common\obj\Release\Common.pdb
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\Common\obj\Release\Common.csprojResolveAssemblyReference.cache

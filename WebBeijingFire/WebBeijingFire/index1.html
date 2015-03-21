@@ -1,0 +1,752 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<html>
+<head id="ctl00_Head2"><title>
+	中国消防北京网
+</title>
+    
+    <style>
+        /*下拉菜单样式*/
+        *
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #div_center
+        {
+            width: 940px;
+            height: 36px;
+            background-image: url(images/daohang.gif);
+            background-repeat: repeat-x;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 0px;
+            padding-left: 10px;
+            margin-bottom: 10PX;
+            float: left;
+        }
+        /*定义总体宽度、高度；background:003399; 控制背景颜色,居中对齐*/
+        #nav
+        {
+            line-height: 30px;
+            list-style-type: none;
+            margin-top: 6px;
+        }
+        /*控制一级菜单行高；上边距5px；*/
+        #nav a
+        {
+            display: block;
+            width: 103px;
+            text-align: center;
+            font-size: 13px;
+        }
+        /*一级菜单链接总体样式：每个菜单的宽，居中对齐，文字大小*/
+        #nav a:link
+        {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0;
+        }
+        /* 未访问的链接 */
+        #nav a:visited
+        {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0;
+        }
+        /* 已访问的颜色 */
+        #nav a:hover
+        {
+            color: #C00;
+            text-decoration: none;
+        }
+        /* 鼠标在链接上 */
+        #nav li
+        {
+            margin-top: 0px;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+        }
+        /* 一级菜左对齐 */
+        #nav li a:hover
+        {
+            background-image: url(images/button1_bg.jpg);
+        }
+        /* 鼠标在一级菜单上改变其背景色 */
+        #nav li ul
+        {
+            line-height: 22px;
+            background: #fff;
+            list-style-type: none;
+            text-align: left;
+            left: -999em;
+            width: 102px;
+            position: absolute;
+            border-width: 1px;
+            border-top-style: none;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-color: #003399;
+            padding: 1px;
+        }
+        /*二级菜单总体样式：行高24px；背景颜色；外框宽度；相对位置；边框一个象素，上边没样式，左右下边实线，边框颜色#003399；内边距1个象素*/
+        #nav li ul a
+        {
+            display: block;
+            width: 105px;
+            text-align: left;
+            padding-left: 2px;
+        }
+        /* 二级菜单链接样式；背景宽度、左对齐，左缩进2gd */
+        #nav li ul a:link
+        {
+            color: #0d5097;
+            text-decoration: none;
+        }
+        /* 未访问的链接 */
+        #nav li ul a:visited
+        {
+            color: #0d5097;
+            text-decoration: none;
+        }
+        /* 已访问的链接 */
+        #nav li ul a:hover
+        {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: normal;
+            background: #2969b1;
+        }
+        /* 鼠标在链接上 */
+        #nav li:hover ul
+        {
+            left: auto;
+        }
+        #nav li.sfhover ul
+        {
+            left: auto;
+        }
+    </style>
+    <script language="javascript">
+
+        function resizepic300(ImgD) {
+            var image = new Image();
+            var iwidth = 300; //定义允许图片宽度
+            var iheight = 128; //定义允许图片高度
+            image.src = ImgD.src;
+            if (image.width > 0 && image.height > 0) {
+                flag = true;
+                if (image.width / image.height >= iwidth / iheight) {
+                    if (image.width > iwidth) {
+                        ImgD.width = iwidth;
+                        ImgD.height = (image.height * iwidth) / image.width;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+
+                    ImgD.alt = image.width + "×" + image.height;
+                }
+                else {
+                    if (image.height > iheight) {
+                        ImgD.height = iheight;
+                        ImgD.width = (image.width * iheight) / image.height;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+                    ImgD.alt = image.width + "×" + image.height;
+                }
+            }
+        }
+    </script>
+    <link href="css/ess_ff.css" rel="stylesheet" type="text/css" /></head>
+<body>
+    <div class="top">
+        <div class="centet">
+            <img src="images/beann.jpg" /></div>
+        <!--导航条头-->
+        <div id="div_center">
+            <ul id="nav">
+                <li><a href="index.aspx">网站首页</a></li>
+                <li><a href="news.aspx?ID=8285">协会简介</a> </li>
+                <li><a href="list.aspx?c2=3">协会动态</a> </li>
+                <li><a href="list.aspx?c2=1">通知公告</a> </li>
+                <li><a href="list.aspx?c1=2">消防新闻</a> </li>
+                <li><a href="list.aspx?c1=4">学园园地</a>
+                    <ul>
+                        <li><a href="list.aspx?c2=16">·论文选登</a></li>
+                        <li><a href="list.aspx?c2=17">·译文选登</a></li>
+                        <li><a href="list.aspx?c2=18">·科技信息</a></li></ul>
+                </li>
+                <li><a href="list.aspx?c1=5">消防科普</a></li>
+                <li><a href="list.aspx?c1=3">企业名录</a></li>
+                <li><a href="news.aspx?ID=8286">入会须知</a></li>
+                <li style="display: none;">
+                    2014-10-27 星期一</li>
+            </ul>
+            <script type="text/javascript">
+<!--
+                function menuFix() {
+                    var sfEls = document.getElementById("nav").getElementsByTagName("li");
+                    for (var i = 0; i < sfEls.length; i++) {
+                        sfEls[i].onmouseover = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onMouseDown = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onMouseUp = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onmouseout = function () {
+                            this.className = this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+"");
+                        }
+                    }
+                }
+                window.onload = menuFix;
+//--></script>
+            <!--导航条尾-->
+        </div>
+        
+    <div id="left">
+        <div id="left_1">
+            <span class="STYLE4">通知公告</span><span class="right"><a href="list.aspx?c2=1">更多>></a></span>
+            <ul>
+                
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8898"
+                                target="_blank">关于征求《北京市电气防火检测技</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8895"
+                                target="_blank">关于举办《火灾自动报警系统设计</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8894"
+                                target="_blank">关于印发《北京市建筑消防设施检</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8892"
+                                target="_blank">关于会员重新申请登记的通知</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8891"
+                                target="_blank">关于第四期灭火器维修技能培训班</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8885"
+                                target="_blank">关于举办第四期灭火器维修技能培</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8884"
+                                target="_blank">关于领取灭火器维修技能培训结业</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_6.gif" /><a href="/news.aspx?ID=8881"
+                                target="_blank">灭火器维修技能培训考试成绩公示</a></li>
+                    
+            </ul>
+        </div>
+        <div id="left_2">
+            <table width="226" height="36" border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td width="151">
+                        <label>
+                            <input name="textfield" type="text" size="20" style="border-bottom: 1px #4789bd  solid;
+                                border-left: 1px #4789bd  solid; border-top: 1px #4789bd  solid; border-right: 1px #4789bd  solid;" />
+                        </label>
+                    </td>
+                    <td width="75">
+                        <label>
+                            <input type="image" name="imageField" src="images/left_7.gif" />
+                        </label>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="left_3">
+            <span class="STYLE5">协会动态</span>
+            <ul style="margin-bottom: 0px;">
+                
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8893"
+                                target="_blank">消防行业职业技能鉴定（北京）站</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8888"
+                                target="_blank">消防协会组织召开消防设施检测报</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8886"
+                                target="_blank">北京消防协会领导到职业技能鉴定</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8879"
+                                target="_blank">北京消防协会组织开展注册消防工</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8878"
+                                target="_blank">北京消防协会举办灭火器维修技能</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8719"
+                                target="_blank">公安部消防局召开社会消防培训和</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8695"
+                                target="_blank">北京消防协会组织召开注册消防工</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=8667"
+                                target="_blank">摆问题 讲举措 树行风——北京</a></li>
+                    
+            </ul>
+            <div style="background-image: url(images/left_9.gif); margin-top: 0px; padding-top: 12px;">
+                <span class="STYLE6">常务理事单位</span><span class="right00"><a href="list.aspx?c2=4">更多>></a></span></div>
+            <ul style="margin-bottom: 0px;">
+                
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4434"
+                                target="_blank">北京安正消防技术中心</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4438"
+                                target="_blank">北京海湾威尔电子工程有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4430"
+                                target="_blank">北京市劳动保护科学研究所</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4431"
+                                target="_blank">中国建筑科学研究院建筑防火研究</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4433"
+                                target="_blank">北京安迪盛安全系统自动化有限公</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4435"
+                                target="_blank">北京城建天宁消防有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4436"
+                                target="_blank">北京阿科普机电工程有限公司</a></li>
+                    
+            </ul>
+            <div style="background-image: url(images/left_9.gif); margin-top: 0px; padding-top: 12px;">
+                <span class="STYLE6">理事单位</span><span class="right02"><a href="list.aspx?c2=5">更多>></a></span></div>
+            <ul style="margin-bottom: 0px;">
+                
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4440"
+                                target="_blank">中国华北电网有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4441"
+                                target="_blank">清华大学</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4445"
+                                target="_blank">北京力安达消防安全工程有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4447"
+                                target="_blank">北京瑞恒达科技发展有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4448"
+                                target="_blank">北京火政殷实消防技术有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4449"
+                                target="_blank">北京顺安盛消防科技有限公司</a></li>
+                    
+                        <li class="catno">
+                            <img src="images/left_8.gif" /><a href="/news.aspx?ID=4450"
+                                target="_blank">北京宏安达伟业消防技术有限公司</a></li>
+                    
+            </ul>
+            <div style="background-image: url(images/left_9.gif); margin-top: 0px; padding-top: 12px;">
+                <span class="STYLE6">会员单位</span><span class="right02"><a href="list.aspx?c2=6">更多>></a></span></div>
+            <ul style="margin-bottom: 0px;">
+                
+            </ul>
+            <div style="background-image: url(images/left_10.gif); margin-top: 0px; padding-top: 0px;
+                height: 13px;">
+            </div>
+            <div id="left_4">
+                <ol>
+                    <li><a href="http://jd.beijingfire.com/" target="_blank">
+                        <img src="images/ga1.jpg" border="0" width="240" />
+                        </a></li>
+                    <li><a href="http://www.bjraxf.com/" target="_blank">
+                        <img src="images/ga2.jpg" border="0" /></a></li>
+                    <li><a href="http://www.rdxiaofang.com/" target="_blank">
+                        <img src="images/ga3.jpg" border="0" /></a></li>
+                    <li>
+                        <img src="images/ga4.jpg" border="0" /></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+    <!--左列结束---------------------------------------------------------------->
+    <!--右列开始---------------------------------------------------------------->
+    <div id="main">
+        <!----------------------右一头-------------------------------------------->
+        <div id="main1">
+            <div class="main1_1">
+                <script language="javascript" src="js/MSClass.js"></script>
+                <script type="text/javascript">
+
+
+                    var focus_width = 308
+                    var focus_height = 199
+                    var text_height = 16
+                    var swf_height = focus_height + text_height
+
+                    var pics = '/uploadfiles/Images/2014-10/2014102722363058840283.jpg|/uploadfiles/Images/2014-10/2014101414400367521524.jpg|/uploadfiles/Images/2014-10/2014102409485653963536.jpg|/uploadfiles/Images/2014-10/s2014101315365316644962.jpg|/uploadfiles/Images/2014-10/2014102409531369523330.jpg|/uploadfiles/Images/2014-10/2014102721595689822393.jpg|/uploadfiles/Images/2014-5/s2014050909310831099960.jpg|/uploadfiles/Images/2014-10/2014102722380945498159.jpg'
+                    var links = '/news.aspx?ID=8896|/news.aspx?ID=8890|/news.aspx?ID=8889|/news.aspx?ID=8888|/news.aspx?ID=8887|/news.aspx?ID=8842|/news.aspx?ID=8839|/news.aspx?ID=8832'
+                    var texts = '吴志强理事长参加2014中国消防协会科学技术年会|北京消防发布“掌上119” 可发紧急求助短信|吴志强理事长到融达保安分公司宣布人事任命|消防协会组织召开消防设施检测报告（模版）研讨会|吴志强理事长到融达保安分公司宣布人事任命并亲切慰问公司离退休老同志|美国加州山火数千人疏散|工人意外引发大火烧毁美国大桥 消防员通宵灭火|隧道内火灾救援首次演练合格'
+
+                    document.write('<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,0,0" width="' + focus_width + '" height="' + swf_height + '">');
+                    document.write('<param name="allowScriptAccess" value="sameDomain"><param name="movie" value="images/info_ad.swf"><param name="quality" value="high"><param name="bgcolor" value="#ffffff">');
+                    document.write('<param name="menu" value="false"><param name=wmode value="opaque">');
+                    document.write('<param name="FlashVars" value="pics=' + pics + '&links=' + links + '&texts=' + texts + '&borderwidth=' + focus_width + '&borderheight=' + focus_height + '&textheight=' + text_height + '">');
+                    document.write('<embed src="images/info_ad.swf" wmode="opaque" FlashVars="pics=' + pics + '&links=' + links + '&texts=' + texts + '&borderwidth=' + focus_width + '&borderheight=' + focus_height + '&textheight=' + text_height + '" menu="false" bgcolor="#ffffff" quality="high" width="' + focus_width + '" height="' + swf_height + '" allowScriptAccess="sameDomain" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" />'); document.write('</object>');
+
+
+                </script>
+            </div>
+            <div class="main1_2">
+                <div style="margin-top: 0px; padding-top: 0px; padding-bottom: 8px;">
+                    <span class="STYLE7">北京消防新闻</span><span class="right03"><a href="list.aspx?c2=7">更多>></a></span></div>
+                <ul style="margin-bottom: 8px;">
+                    
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8896"
+                                    target="_blank">吴志强理事长参加2014中国消防协会科学技术</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8890"
+                                    target="_blank">北京消防发布“掌上119” 可发紧急求助短信</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8889"
+                                    target="_blank">吴志强理事长到融达保安分公司宣布人事任命</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8887"
+                                    target="_blank">吴志强理事长到融达保安分公司宣布人事任命并亲</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8864"
+                                    target="_blank">消防国际会都中队成立</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8862"
+                                    target="_blank">13号线声屏障腾起数米大火</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8857"
+                                    target="_blank">北京最大规模消防排查启动</a></li>
+                        
+                            <li class="tt">
+                                <img src="images/reght_2.gif" /><a href="/news.aspx?ID=8848"
+                                    target="_blank">消防逐一排查考点安全</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        <!-----------------------右一尾------------------------------------------->
+        <!-----------------------右二头------------------------------------------->
+        <div class="main2">            
+            <EMBED height="100" pluginspage="http://www.macromedia.com/go/getflashplayer" src="468_60.swf" type=application/x-shockwave-flash width="690" wmode="transparent" quality="high"></EMBED><br / >
+            <a href='http://www.bjhatd.com/' target="_blank" style='display:block;width:690px;height:100px;position:absolute;margin-top:-100px; z-index:999;background:#000;filter:alpha(opacity=0);-moz-opacity:0;opacity: 0' title='北京华安泰达科技有限公司'></a>
+        </div>
+        <!-----------------------右二尾------------------------------------------->
+        <!-----------------------右三头------------------------------------------->
+        <div id="main3">
+            <div class="main3_1">
+                <div style="margin-top: 0px; padding-top: 0px; padding-bottom: 8px;">
+                    <span class="STYLE7">国内消防新闻 </span><span class="right04"><a href="list.aspx?c2=8">更多>></a></span></div>
+                <div class="imgg">
+                    <a href=/news.aspx?ID=8756 target="_blank"><img src="/uploadfiles/Images/2014-10/2014102722010526152341.jpg" width="117" height="99" border="0" /></a></div>
+                <ul style="margin-bottom: 8px;">
+                    
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8850"
+                                    target="_blank">百家互联网站消防标语征集活</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8846"
+                                    target="_blank">公安部消防局首次发布国民消</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8837"
+                                    target="_blank">内蒙古大兴安岭北部原始林区</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8835"
+                                    target="_blank">上海两90后消防员救火牺牲</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8834"
+                                    target="_blank">全国消防部队出色完成“五一”安保工作</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8829"
+                                    target="_blank">公安部消防局部署“五一”安保工作</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8824"
+                                    target="_blank">香格里拉发生森林火灾</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8822"
+                                    target="_blank">八部门对省级政府消防考核</a></li>
+                        
+                </ul>
+            </div>
+            <div class="main3_2">
+                <div style="margin-top: 0px; padding-top: 0px; padding-bottom: 8px;">
+                    <span class="STYLE7">国际消防新闻</span><span class="right04"><a href="list.aspx?c2=9"> 更多>></a></span></div>
+                <div class="imgg">
+                    <a href=/news.aspx?ID=8842 target="_blank"><img src="/uploadfiles/Images/2014-10/2014102721595689822393.jpg" width="117" height="99" border="0"  /></a>
+                </div>
+                <ul style="margin-bottom: 8px;">
+                    
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8883"
+                                    target="_blank">纽约华人聚居区突发严重</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8880"
+                                    target="_blank">悉尼CBD一大楼内中餐</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8858"
+                                    target="_blank">阿根廷一华人超市火灾造</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8849"
+                                    target="_blank">纽约一居民区发生火灾致</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8842"
+                                    target="_blank">美国加州山火数千人疏散</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8839"
+                                    target="_blank">工人意外引发大火烧毁美国大桥 消防员通宵</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8836"
+                                    target="_blank">印度一鞭炮厂发生火灾致15人死亡</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8831"
+                                    target="_blank">孟加拉国一大型家具厂发生火灾</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        <!-----------------------右三尾------------------------------------------->
+        <div class="main2">
+            <table>
+                <tr>
+                    <td>
+                        <a href="http://www.bjlhc.com.cn" target="_blank"><img src="images/lhcxf1.gif" height="80" width="350" border="0" /></a>
+                    </td>
+                    <td  align="center" width="350">
+                         <a href="http://www.jdxfqt.com/" target="_blank"><img src="images/jdxfqt.gif" height="80"  border="0" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="main5">
+            <iframe src="qyml.aspx" width="702" marginwidth="0" height="222" marginheight="0"
+                align="middle" scrolling="no" frameborder="0"></iframe>
+        </div>
+        <div class="main2">
+            <table>
+                <tr>
+                    <td>
+                        <a href="http://xbcs.fire.net.cn/" target="_blank"><img src="images/xbcs.jpg" height="120" border="0" /></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <!-----------------------右六头------------------------------------------->
+        <div id="main6">
+            <div class="main6_1">
+                <div style="margin-top: 0px; padding-top: 0px; padding-bottom: 8px; padding-left: 18px;">
+                    <span class="STYLE7">学术园地</span><span class="right05"><a href="list.aspx?c1=4">更多>></a></span></div>
+                <ul style="margin-bottom: 8px;">
+                    
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8828"
+                                    target="_blank">《消防给水及消火栓系统技术规范》发布公告</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8827"
+                                    target="_blank">《防火卷帘、防火门、防火窗施工及验收规范》发</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8826"
+                                    target="_blank">《干粉灭火装置》行业标准修订发布</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8825"
+                                    target="_blank">《消防员灭火防护服》行业标准修订发布</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="http://www.bjxfj.gov.cn/publish/portal0/tab107/info20661.htm"
+                                    target="_blank">《社会消防技术服务管理规定》（公安部第129</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8790"
+                                    target="_blank">公安部发布《社会消防技术服务管理规定》</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8723"
+                                    target="_blank">GA1061《消防产品一致性检查要求》发布</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8722"
+                                    target="_blank">GB8624《建筑材料及制品燃烧性能分级》修</a></li>
+                        
+                </ul>
+            </div>
+            <div class="main6_2">
+                <div style="margin-top: 0px; padding-top: 0px; padding-bottom: 8px; padding-left: 18px;">
+                    <span class="STYLE7">消防科普</span><span class="right05"><a href="list.aspx?c1=5"> 更多>></a></span></div>
+                <ul style="margin-bottom: 8px;">
+                    
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8854"
+                                    target="_blank">电器夏季易起火家居火灾如何防</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8852"
+                                    target="_blank">当心：夏季高温易发这四类火灾!</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8788"
+                                    target="_blank">春季校园防火攻略</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8762"
+                                    target="_blank">电动车走进千家万户 安全不可忽视</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8760"
+                                    target="_blank">公安部消防局针对广州火灾发消防安全提示</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8736"
+                                    target="_blank">教您快速辨识消防产品“真面目”</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8721"
+                                    target="_blank">夏季高温谨防车辆自燃</a></li>
+                        
+                            <li class="ttt">
+                                <img src="images/reght_4.gif" /><a href="/news.aspx?ID=8720"
+                                    target="_blank">公交车火灾逃生提示</a></li>
+                        
+                </ul>
+            </div>
+        </div>
+        <div id="main7">
+            <script src="js/MSClasss.js" language="javascript"></script>
+            <div id="marqueediv1" style="margin-top: 14px; padding-left: 2px; margin-left: 0px;
+                overflow: hidden; width: 630px; height: 160px;">
+                
+                        <a href="/news.aspx?ID=8820" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722284882612413.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8819" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722292257183229.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8818" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722271625770439.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8817" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722264658849084.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8816" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722261535830280.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8815" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722274466236934.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8814" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722283013495272.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+                        <a href="/news.aspx?ID=8813" target="_blank">
+                            <img class="bian2" height="128" src="/uploadfiles/Images/2014-10/2014102722295730058059.jpg"
+                                onload="javascript:resizepic300(this);" border="0" style="margin-right: 12px;"></a>
+                    
+            </div>
+            <script>
+                new Marquee("marqueediv1", 2, 1, 650, 160, 20, 0, 0)
+            </script>
+        </div>
+        <!-----------------------右六尾------------------------------------------->
+    </div>
+    <!--右列结束---------------------------------------------------------------->
+
+        <div id="footer">
+            <ul>
+                
+                        <li><a href="http://www.fire.net.cn/" target="_blank">
+                            <img src="/uploadfiles/Images/2014-10/2014102722324512241752.jpg" width="140" height="30"
+                                border="0" /></a></li>
+                    
+                        <li><a href="http://www.bjxfj.gov.cn/" target="_blank">
+                            <img src="/uploadfiles/Images/2014-10/2014102722334246428036.png" width="140" height="30"
+                                border="0" /></a></li>
+                    
+                
+            </ul>
+        </div>
+        <div class="og_footer">
+            <a href="index.aspx">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="news.aspx?ID=8285">协会简介</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="list.aspx?c2=3">协会动态</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=2">
+                消防新闻</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=5">消防科普</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="list.aspx?c2=1">通知公告</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=4">
+                学术园地</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=3">企业名录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="news.aspx?ID=8286">入会须知</a>
+            <br />
+            联系地址：北京市西直门内大街190号 北京消防协会秘书处 联系电话：010-82215752
+            <br />
+            京ICP备06008481号 2004-2005 中国消防 北京网 All Rights Reserved
+        </div>
+    </div>
+    <div style="display: none">
+        <script language="javascript" type="text/javascript" src="http://js.users.51.la/2368445.js"></script>
+        <noscript>
+            <a href="http://www.51.la/?2368445" target="_blank">
+                <img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/2368445.asp"
+                    style="border: none" /></a></noscript>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebBeijingFire", "WebBeijingFire\WebBeijingFire.csproj", "{109A3D3B-FB47-4D36-8F8E-0C0F27748BC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SQLServerDAL", "SQLServerDAL\SQLServerDAL.csproj", "{0E298E11-0BD7-4CC5-9591-7E0E8559A70B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entity", "Entity\Entity.csproj", "{1374BFC2-8816-4023-99C5-AD2E9E52B758}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Business.csproj", "{E6A19A3B-AAEF-4D1A-A551-C7BDB30BD57A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{8939A7F6-D2C5-44BD-8D22-7E72B3B65124}"
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 6
+		SccProjectUniqueName0 = Common\\Common.csproj
+		SccProjectName0 = $/WebBeijingFire.root/WebBeijingFire/Common
+		SccLocalPath0 = Common
+		SccLocalPath1 = .
+		SccProjectUniqueName2 = Business\\Business.csproj
+		SccLocalPath2 = .
+		SccProjectFilePathRelativizedFromConnection2 = Business\\
+		SccProjectUniqueName3 = Entity\\Entity.csproj
+		SccLocalPath3 = .
+		SccProjectFilePathRelativizedFromConnection3 = Entity\\
+		SccProjectUniqueName4 = SQLServerDAL\\SQLServerDAL.csproj
+		SccLocalPath4 = .
+		SccProjectFilePathRelativizedFromConnection4 = SQLServerDAL\\
+		SccProjectUniqueName5 = WebBeijingFire\\WebBeijingFire.csproj
+		SccLocalPath5 = .
+		SccProjectFilePathRelativizedFromConnection5 = WebBeijingFire\\
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{109A3D3B-FB47-4D36-8F8E-0C0F27748BC9}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{109A3D3B-FB47-4D36-8F8E-0C0F27748BC9}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{109A3D3B-FB47-4D36-8F8E-0C0F27748BC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{109A3D3B-FB47-4D36-8F8E-0C0F27748BC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E298E11-0BD7-4CC5-9591-7E0E8559A70B}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{0E298E11-0BD7-4CC5-9591-7E0E8559A70B}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{0E298E11-0BD7-4CC5-9591-7E0E8559A70B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E298E11-0BD7-4CC5-9591-7E0E8559A70B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1374BFC2-8816-4023-99C5-AD2E9E52B758}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{1374BFC2-8816-4023-99C5-AD2E9E52B758}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{1374BFC2-8816-4023-99C5-AD2E9E52B758}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1374BFC2-8816-4023-99C5-AD2E9E52B758}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6A19A3B-AAEF-4D1A-A551-C7BDB30BD57A}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A19A3B-AAEF-4D1A-A551-C7BDB30BD57A}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{E6A19A3B-AAEF-4D1A-A551-C7BDB30BD57A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6A19A3B-AAEF-4D1A-A551-C7BDB30BD57A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8939A7F6-D2C5-44BD-8D22-7E72B3B65124}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{8939A7F6-D2C5-44BD-8D22-7E72B3B65124}.Debug|Any CPU.Build.0 = Release|Any CPU
+		{8939A7F6-D2C5-44BD-8D22-7E72B3B65124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8939A7F6-D2C5-44BD-8D22-7E72B3B65124}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,7 @@
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\bin\Release\SQLServerDAL.dll
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\bin\Release\SQLServerDAL.pdb
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\bin\Release\Entity.dll
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\bin\Release\Entity.pdb
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.csprojResolveAssemblyReference.cache
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.dll
+E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.pdb

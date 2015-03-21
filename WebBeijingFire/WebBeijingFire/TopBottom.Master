@@ -1,0 +1,261 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TopBottom.master.cs"
+    Inherits="WebBeijingFire.TopBottom" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<html>
+<head id="Head2" runat="server">
+    <title>中国消防北京网</title>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <style>
+        /*下拉菜单样式*/
+        *
+        {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+        #div_center
+        {
+            width: 940px;
+            height: 36px;
+            background-image: url(images/daohang.gif);
+            background-repeat: repeat-x;
+            margin-left: auto;
+            margin-right: auto;
+            margin-left: 0px;
+            padding-left: 10px;
+            margin-bottom: 10PX;
+            float: left;
+        }
+        /*定义总体宽度、高度；background:003399; 控制背景颜色,居中对齐*/
+        #nav
+        {
+            line-height: 30px;
+            list-style-type: none;
+            margin-top: 6px;
+        }
+        /*控制一级菜单行高；上边距5px；*/
+        #nav a
+        {
+            display: block;
+            width: 103px;
+            text-align: center;
+            font-size: 13px;
+        }
+        /*一级菜单链接总体样式：每个菜单的宽，居中对齐，文字大小*/
+        #nav a:link
+        {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0;
+        }
+        /* 未访问的链接 */
+        #nav a:visited
+        {
+            color: #FFF;
+            text-decoration: none;
+            margin: 0;
+        }
+        /* 已访问的颜色 */
+        #nav a:hover
+        {
+            color: #C00;
+            text-decoration: none;
+        }
+        /* 鼠标在链接上 */
+        #nav li
+        {
+            margin-top: 0px;
+            float: left;
+            overflow: hidden;
+            text-align: center;
+        }
+        /* 一级菜左对齐 */
+        #nav li a:hover
+        {
+            background-image: url(images/button1_bg.jpg);
+        }
+        /* 鼠标在一级菜单上改变其背景色 */
+        #nav li ul
+        {
+            line-height: 22px;
+            background: #fff;
+            list-style-type: none;
+            text-align: left;
+            left: -999em;
+            width: 102px;
+            position: absolute;
+            border-width: 1px;
+            border-top-style: none;
+            border-right-style: solid;
+            border-bottom-style: solid;
+            border-left-style: solid;
+            border-color: #003399;
+            padding: 1px;
+        }
+        /*二级菜单总体样式：行高24px；背景颜色；外框宽度；相对位置；边框一个象素，上边没样式，左右下边实线，边框颜色#003399；内边距1个象素*/
+        #nav li ul a
+        {
+            display: block;
+            width: 105px;
+            text-align: left;
+            padding-left: 2px;
+        }
+        /* 二级菜单链接样式；背景宽度、左对齐，左缩进2gd */
+        #nav li ul a:link
+        {
+            color: #0d5097;
+            text-decoration: none;
+        }
+        /* 未访问的链接 */
+        #nav li ul a:visited
+        {
+            color: #0d5097;
+            text-decoration: none;
+        }
+        /* 已访问的链接 */
+        #nav li ul a:hover
+        {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: normal;
+            background: #2969b1;
+        }
+        /* 鼠标在链接上 */
+        #nav li:hover ul
+        {
+            left: auto;
+        }
+        #nav li.sfhover ul
+        {
+            left: auto;
+        }
+    </style>
+    <script language="javascript">
+
+        function resizepic300(ImgD) {
+            var image = new Image();
+            var iwidth = 300; //定义允许图片宽度
+            var iheight = 128; //定义允许图片高度
+            image.src = ImgD.src;
+            if (image.width > 0 && image.height > 0) {
+                flag = true;
+                if (image.width / image.height >= iwidth / iheight) {
+                    if (image.width > iwidth) {
+                        ImgD.width = iwidth;
+                        ImgD.height = (image.height * iwidth) / image.width;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+
+                    ImgD.alt = image.width + "×" + image.height;
+                }
+                else {
+                    if (image.height > iheight) {
+                        ImgD.height = iheight;
+                        ImgD.width = (image.width * iheight) / image.height;
+                    }
+                    else {
+                        ImgD.width = image.width;
+                        ImgD.height = image.height;
+                    }
+                    ImgD.alt = image.width + "×" + image.height;
+                }
+            }
+        }
+    </script>
+    <link href="css/ess_ff.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="top">
+        <div class="centet">
+            <img src="images/beann.jpg" /></div>
+        <!--导航条头-->
+        <div id="div_center">
+            <ul id="nav">
+                <li><a href="index.aspx">网站首页</a></li>
+                <li><a href="news.aspx?ID=8285">协会简介</a> </li>
+                <li><a href="list.aspx?c2=3">协会动态</a> </li>
+                <li><a href="list.aspx?c2=1">通知公告</a> </li>
+                <li><a href="list.aspx?c1=2">消防新闻</a> </li>
+                <li><a href="list.aspx?c1=4">学园园地</a>
+                    <ul>
+                        <li><a href="list.aspx?c2=16">·论文选登</a></li>
+                        <li><a href="list.aspx?c2=17">·译文选登</a></li>
+                        <li><a href="list.aspx?c2=18">·科技信息</a></li></ul>
+                </li>
+                <li><a href="list.aspx?c1=5">消防科普</a></li>
+                <li><a href="list.aspx?c1=3">企业名录</a></li>
+                <li><a href="news.aspx?ID=8286">入会须知</a></li>
+                <li style="display: none;">
+                    <asp:Literal ID="literalTime" runat="server"></asp:Literal></li>
+            </ul>
+            <script type="text/javascript">
+<!--
+                function menuFix() {
+                    var sfEls = document.getElementById("nav").getElementsByTagName("li");
+                    for (var i = 0; i < sfEls.length; i++) {
+                        sfEls[i].onmouseover = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onMouseDown = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onMouseUp = function () {
+                            this.className += (this.className.length > 0 ? " " : "") + "sfhover";
+                        }
+                        sfEls[i].onmouseout = function () {
+                            this.className = this.className.replace(new RegExp("( ?|^)sfhover\\b"),
+"");
+                        }
+                    }
+                }
+                window.onload = menuFix;
+//--></script>
+            <!--导航条尾-->
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        <div id="footer">
+            <ul>
+                <asp:Repeater ID="RepeaterYQLJPic" runat="server">
+                    <ItemTemplate>
+                        <li><a href="<%#DataBinder.Eval(Container.DataItem, "Url")%>" target="_blank">
+                            <img src="<%#DataBinder.Eval(Container.DataItem, "sPic")%>" width="140" height="30"
+                                border="0" /></a></li>
+                    </ItemTemplate>
+                </asp:Repeater>
+                <asp:Repeater ID="RepeaterYQLJ" runat="server">
+                    <ItemTemplate>
+                        <li><a href="<%#DataBinder.Eval(Container.DataItem, "Url")%>" target="_blank">
+                            <%#DataBinder.Eval(Container.DataItem, "Title")%></a></li>
+                    </ItemTemplate>
+                </asp:Repeater>
+            </ul>
+        </div>
+        <div class="og_footer">
+            <a href="index.aspx">首页</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="news.aspx?ID=8285">协会简介</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="list.aspx?c2=3">协会动态</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=2">
+                消防新闻</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=5">消防科普</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="list.aspx?c2=1">通知公告</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=4">
+                学术园地</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a href="list.aspx?c1=3">企业名录</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="news.aspx?ID=8286">入会须知</a>
+            <br />
+            联系地址：北京市西直门内大街190号 北京消防协会秘书处 联系电话：010-82215752
+            <br />
+            京ICP备06008481号 2004-2005 中国消防 北京网 All Rights Reserved
+        </div>
+    </div>
+    <div style="display: none">
+        <script language="javascript" type="text/javascript" src="http://js.users.51.la/2368445.js"></script>
+        <noscript>
+            <a href="http://www.51.la/?2368445" target="_blank">
+                <img alt="&#x6211;&#x8981;&#x5566;&#x514D;&#x8D39;&#x7EDF;&#x8BA1;" src="http://img.users.51.la/2368445.asp"
+                    style="border: none" /></a></noscript>
+    </div>
+</body>
+</html>

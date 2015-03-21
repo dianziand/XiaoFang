@@ -1,0 +1,639 @@
+
+html
+{
+    height: 100%;
+    border: none;
+}
+body
+{
+    height: 100%;
+    border: none;
+    text-align: center;
+    font-size: 12px;
+    color: #000000;
+    background-color: #FFFFFF;
+}
+div, ul, li, img
+{
+    margin: 0;
+    border: none;
+}
+ul, ol
+{
+    list-style-type: none;
+}
+
+
+
+
+.top
+{
+    width: 950px;
+    text-align: left;
+    padding: 0;
+    margin: auto;
+}
+.centet
+{
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    min-height: 133px;
+    _height: 133px; /*overflow:hidden;兼容IE6\IE7 两DIV之间隙*/
+}
+
+#left
+{
+    width: 240px;
+    float: left;
+    margin-right: 8px;
+}
+
+/*左边一头----------------------------------------------------*/
+
+#left_1
+{
+    width: 240px;
+    float: left;
+    height: 223px;
+    background-image: url(../images/left_1.gif);
+    padding: 10px 0px 0px 0px;
+}
+
+#main
+{
+    width: 702px;
+    float: right;
+}
+
+span
+{
+    text-align: center;
+    margin-top: 0px;
+    padding: 18px;
+}
+
+span.right
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin-left: 50px;
+}
+.right a:link
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+span.right a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right a:visited
+{
+    color: #ffffff;
+    text-decoration: none;
+}
+#left_1 ul
+{
+    padding-top: 8px;
+}
+#left_1 .catno
+{
+    list-style: none;
+    font-family: "宋体";
+    color: #999999;
+    margin: 9px 0px 3px 8px;
+}
+#left_1 .catno img
+{
+    margin: 0px 5px 0px 6px;
+}
+
+#left_1 .catno a:link
+{
+    color: #424040;
+    text-decoration: none;
+}
+#left_1 .catno a:visited
+{
+    text-decoration: none;
+    color: #424040;
+}
+#left_1 .catno a:hover
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+#left_1 .catno a:active
+{
+    text-decoration: none;
+}
+/*-----------------------------------------------------------------------------------*/
+
+#left_2
+{
+    background-image: url(../images/left_2.gif);
+    width: 228px;
+    height: 41px;
+    float: left;
+    margin: 10px 0px 11px 0px;
+    padding: 30px 0px 0px 12px;
+}
+
+.STYLE4
+{
+    font-size: 14px;
+    font-family: "黑体";
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.STYLE5
+{
+    font-size: 14px;
+    font-family: "黑体";
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 6px;
+    margin-right: 16px;
+}
+.STYLE6
+{
+    font-size: 14px;
+    font-family: "黑体";
+    color: #1444f7;
+    font-weight: bold;
+    margin-left: 6px;
+    width: 166px;
+}
+.STYLE7
+{
+    font-size: 14px;
+    font-family: "黑体";
+    color: #0e7bc1;
+    font-weight: bold;
+    margin-left: 0px;
+    width: 210px;
+}
+/*左边一尾----------------------------------------------------------------------------*/
+/*左边二头----------------------------------------------------------------------------*/
+
+#left_3
+{
+    background-image: url(../images/left_3.gif);
+    width: 240px;
+    height: 300px;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    background-repeat: no-repeat;
+    padding: 10px 0px 0px 0px;
+}
+#left_3 ul
+{
+    background-image: url(../images/left_4.gif);
+    margin: 0px 0px 12px 0px;
+    padding: 12px 0px 0px 0px;
+    background-repeat: repeat-y;
+}
+
+
+
+#left_3.catno
+{
+    list-style: none;
+    font-family: "宋体";
+    color: #999999;
+    margin: 5px 5px 3px 12px;
+    padding: 0px 10px 5px 0px;
+}
+#left_3 .catno img
+{
+    margin: 0px 8px 0px 12px;
+    vertical-align: middle;
+}
+#left_3 .catno
+{
+    height: 18px;
+    padding: 0px 0px 5px 0px;
+}
+#left_3 .catno a:link
+{
+    color: #424040;
+    text-decoration: none;
+}
+#left_3 .catno a:visited
+{
+    text-decoration: none;
+    color: #424040;
+}
+#left_3 .catno a:hover
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+.catno a:active
+{
+    text-decoration: none;
+}
+span.right00
+{
+    font-family: "宋体";
+    font-size: 12px;
+}
+.right00 a:link
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+span.right00 a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right00 a:visited
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+
+
+span.right02
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin-left: 50px;
+}
+.right02 a:link
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+span.right02 a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right02 a:visited
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+#left_4
+{
+    width: 240px;
+    height: 200px;
+    float: left;
+    margin: 0px 0px 8px 0px;
+}
+#left_4 img
+{
+    margin: 2px 0px 1px 0px;
+}
+/*左边结束----------------------------------------------------------------------------*/
+
+
+#main1
+{
+    width: 702px;
+    height: auto;
+    margin: 0px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+
+.main1_1
+{
+    width: 307px;
+    height: 219px;
+    margin: 0px 8px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    border-left: 7px #4789bd solid;
+    border-top: 7px #4789bd solid;
+    border-right: 7px #4789bd solid;
+    border-bottom: 7px #4789bd solid;
+    overflow: hidden;
+}
+
+.main1_2
+{
+    float: left;
+    width: 369px;
+    height: 221px;
+    background-image: url(../images/reght_1.gif);
+    background-repeat: no-repeat;
+    padding: 8px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border-bottom: 1px #4789bd solid;
+    border-left: 1px #4789bd solid;
+    border-top: 1px #4789bd solid;
+    border-right: 1px #4789bd solid;
+    overflow: hidden;
+}
+
+span.right03
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin-left: 100px;
+}
+.right03 a:link
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+span.right03 a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right03 a:visited
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+
+
+
+.main1_2 .tt
+{
+    font-size: 14px;
+    font-family: "宋体";
+    color: #999999;
+    margin: 7px 0px 3px 8px;
+}
+.main1_2 .tt img
+{
+    margin: 0px 10px 0px 6px;
+}
+
+.main1_2 .tt a:link
+{
+    color: #002375;
+    text-decoration: none;
+}
+.main1_2 .tt a:visited
+{
+    text-decoration: none;
+    color: #002375;
+}
+.main1_2 .tt a:hover
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+.main1_2 .tt a:active
+{
+    text-decoration: none;
+}
+
+
+.main2
+{
+    width: 702px;
+    height: auto;
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+#main3
+{
+    width: 702;
+    height: auto;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 0px 0px 0px;
+    float: left;
+    overflow: hidden;
+}
+.main3_1
+{
+    width: 345px;
+    height: 229;
+    margin: 0px 8px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    float: left;
+    background-image: url(../images/reght_3.gif);
+    background-repeat: no-repeat;
+    border-left: 1px #a5d4ff solid;
+    border-right: 1px #a5d4ff solid;
+    border-bottom: 1px #a5d4ff solid;
+}
+
+
+.main3_2
+{
+    width: 345px;
+    height: 229;
+    margin: 0px 0px 0px 0px;
+    padding: 8px 0px 8px 0px;
+    float: left;
+    background-image: url(../images/reght_3.gif);
+    background-repeat: no-repeat;
+    border-left: 1px #a5d4ff solid;
+    border-right: 1px #a5d4ff solid;
+    border-bottom: 1px #a5d4ff solid;
+}
+
+span.right04
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin-left: 126px;
+}
+.right04 a:link
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+span.right04 a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right04 a:visited
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+
+
+span.right05
+{
+    font-family: "宋体";
+    font-size: 12px;
+    margin-left: 140px;
+}
+.right05 a:link
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+span.right05 a:hover
+{
+    color: #FF0000;
+    text-decoration: none;
+    position: relative;
+    top: 1px;
+}
+.right05 a:visited
+{
+    color: #1444f7;
+    text-decoration: none;
+}
+
+
+.ttt
+{
+    font-size: 14px;
+    font-family: "宋体";
+    color: #999999;
+    margin: 9px 0px 3px 8px;
+}
+.ttt img
+{
+    margin: 0px 10px 0px 6px;
+}
+
+.ttt a:link
+{
+    color: #002375;
+    text-decoration: none;
+}
+.ttt a:visited
+{
+    text-decoration: none;
+    color: #002375;
+}
+.ttt a:hover
+{
+    text-decoration: none;
+    color: #FF0000;
+}
+.ttt a:active
+{
+    text-decoration: none;
+}
+
+.imgg
+{
+    float: left;
+    margin: 0px 0px 0px 0px;
+    padding: 7px 0px 3px 8px;
+}
+
+
+
+
+#main5
+{
+    width: 702;
+    height: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 0px 0px 0px;
+    float: left;
+    overflow: hidden;
+}
+
+
+.main6_1
+{
+    width: 345px;
+    height: 229;
+    margin: 0px 8px 10px 0px;
+    padding: 8px 0px 8px 0px;
+    float: left;
+    background-image: url(../images/reght_3.gif);
+    background-repeat: no-repeat;
+    border-left: 1px #a5d4ff solid;
+    border-right: 1px #a5d4ff solid;
+    border-bottom: 1px #a5d4ff solid;
+}
+
+
+.main6_2
+{
+    width: 345px;
+    height: 229;
+    margin: 0px 0px 10px 0px;
+    padding: 8px 0px 8px 0px;
+    float: left;
+    background-image: url(../images/reght_3.gif);
+    background-repeat: no-repeat;
+    border-left: 1px #a5d4ff solid;
+    border-right: 1px #a5d4ff solid;
+    border-bottom: 1px #a5d4ff solid;
+}
+
+
+
+#main7
+{
+    width: 662px;
+    height: 163px;
+    background-image: url(../images/right2.gif);
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 40px;
+    overflow: hidden;
+    float: left;
+    background-repeat: no-repeat;
+}
+#footer
+{
+    width: 950px;
+    text-align: left;
+    padding: 5px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
+    height: 158px;
+    float: left;
+    background-image: url(../images/reght_7.gif);
+    background-repeat: repeat-x;
+    overflow: hidden;
+}
+#footer li
+{
+    float: left;
+    width: 156px;
+}
+
+.og_footer
+{
+    width: 950px;
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    height: 86px;
+    float: left;
+    background-image: url(../images/reght_8.gif);
+    background-repeat: repeat-x;
+    line-height: 25px;
+    color: #0023b9;
+}
+
+.og_footer a:link
+{
+    color: #0023b9;
+    text-decoration: none;
+}
+.og_footer a:visited
+{
+    color: #0023b9;
+    text-decoration: none;
+}
+.og_footer a:hover
+{
+    color: #d21027;
+    text-decoration: none;
+}

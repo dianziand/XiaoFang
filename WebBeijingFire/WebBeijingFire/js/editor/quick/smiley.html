@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+    <meta http-equiv="content-type" content="text/html; charset=gbk">
+	<meta name="robots" content="noindex, nofollow" />
+<style> 
+ .jd .img{
+	background:transparent url(http://static.tieba.baidu.com/tb/editor/images/default/jFace.gif) no-repeat scroll left top;
+	width:35px;height:35px;
+	}
+ .pp .img{
+	background:transparent url(http://static.tieba.baidu.com/tb/editor/images/default/fFace.gif) no-repeat scroll left top;
+	width:25px;height:25px;
+	}
+ .ldw .img{
+	background:transparent url(http://static.tieba.baidu.com/tb/editor/images/default/wFace.gif) no-repeat scroll left top;
+	width:35px;height:35px;
+	}	
+ .tsj .img{
+	background:transparent url(http://static.tieba.baidu.com/tb/editor/images/default/tFace.gif) no-repeat scroll left top;
+	width:35px;height:35px;
+	}
+ .bb .img{
+	background:transparent url(http://static.tieba.baidu.com/tb/editor/images/default/bFace.gif) no-repeat scroll left top;
+	width:35px;height:35px;
+	}
+#tabPanel{
+	float:none;
+	text-align:left;
+    width:400px;
+    height:276px;
+    background-color:#F1F1E3;
+}
+#tabContent {
+	height:276px;
+	width:330px;
+	overflow-y:auto;
+	float:left;
+    background:#FFFFFF;<!--EAEAD1-->
+}
+#tabContent div{
+	display: none;
+	height:276px;
+}
+#tabMenu{
+	position:relative;
+	height:126px;
+	width: 70px;
+	float:right;
+}
+#tabMenu div{
+	float:none;
+	display:block;
+	cursor:pointer;
+     width:70px;
+	text-align:center;
+	line-height:21px;
+	height:21px;
+	font:"宋体";
+	font-size:12px;
+}	
+#tabIconReview.show{
+	left:12px;
+	display:block;
+}
+.menuFocus{
+	background:#E8E8FD;
+}
+.menuDefault{
+	background:#FFFFFF;
+}
+#tabIconReview{
+	position:absolute;
+	left:286px;
+	right:200px;
+	top:12px;
+	bottom:200px;
+	z-index:65533;
+	width:50px;
+	height:50px;
+	
+}
+img.review{
+	width:50px;
+	height:50px;
+	border:1px solid #000;
+	background:#FFFFFF;
+	background-position:center;
+	background-repeat:no-repeat;
+}
+</style>
+<script type="text/javascript"> 
+ 
+//document.domain = "baidu.com";
+ 
+try{document.execCommand("BackgroundImageCache",false,true);}catch(e) {}
+ 
+function initImgBox(box,str,len){
+ 
+	var tmpStr="";
+	for(var i=1;i<=len;i++){
+		tmpStr=str;
+		if(i<10)tmpStr=tmpStr+'0';
+		tmpStr=tmpStr+i+'.gif';
+		box.push(tmpStr);
+	}
+}
+ 
+function InsertSmiley(url){
+    try{
+	// 必须先执行closePopup，再执行paste。
+	// closePopup时会恢复IE下的光标焦点放到编辑框里。
+	var editor = parent.BdeText;
+	editor.closePopup();
+	
+	var html = '<img class="BDE_Smiley" changedsize="false" src="' + editor.formatURL(url) + '">';
+	editor.paste(html);
+	editor.dispatch("oneditorselectionchange");
+    }catch(e){}
+}
+function $G(id){	
+	return document.getElementById(id)
+};
+function over(td,srcPath,posFlag){
+ 
+	td.style.backgroundColor="#E8E8FD";
+	$G('faceReview').style.backgroundImage="url("+srcPath+")";
+	if(posFlag==1)
+		$G("tabIconReview").className="show";
+	$G("tabIconReview").style.display='block';
+}
+ 
+function out(td){
+ 
+	td.style.backgroundColor="#FFFFFF";
+	$G("tabIconReview").className="";
+	$G("tabIconReview").style.display='none';
+}
+</script>
+ 
+<script type="text/javascript"> 
+ 
+	var faceBox = {tab0:[],tab1:[],tab2:[],tab3:[],tab4:[]};
+	var inforBox    		= 	{};
+ 
+var sBasePath		= 	"http://static.tieba.baidu.com/tb/editor/images/"; 
+    
+    initImgBox(faceBox['tab0'],'j_00',56);
+	initImgBox(faceBox['tab1'],'t_00',40);
+	initImgBox(faceBox['tab2'],'w_00',53);
+	initImgBox(faceBox['tab3'],'B_00',63);
+	initImgBox(faceBox['tab4'],'i_f',50);
+	
+	inforBox['tab0']=['Kiss','Love','Yeah','啊！','背扭','顶','抖胸','88','汗','瞌睡','鲁拉','拍砖','揉脸','生日快乐','一楼喂熊','俯卧撑','打酱油','囧','大笑','瀑布汗~','惊讶','臭美','傻笑','抛媚眼','发怒','我错了','money','气愤','HI','KISS','不说','不要','扯花','大心','顶','大惊','飞吻','鬼脸','害羞','口水','狂哭','来','','','','','','','','','','','','','',''];
+	inforBox['tab1']=['Kiss','Love','Yeah','啊！','背扭','顶','抖胸','88','汗','瞌睡','鲁拉','拍砖','揉脸','生日快乐','摊手','睡觉','瘫坐','无聊','星星闪','旋转','也不行','郁闷','正Music','抓墙','撞墙至死','歪头','戳眼','飘过','互相拍砖','砍死你','扔桌子','少林寺','什么？','转头','我爱牛奶','我踢','摇晃','晕厥','在笼子里','震荡'];
+	inforBox['tab2']=['一楼喂熊','俯卧撑','打酱油','囧','大笑','瀑布汗~','惊讶','臭美','傻笑','抛媚眼','发怒','我错了','money','气愤','挑逗','吻','怒','胜利','委屈','受伤','说啥呢？','闭嘴','不','逗你玩儿','飞吻','眩晕','魔法','我来了','睡了','我打','闭嘴','打','打晕了','刷牙','爆揍','炸弹','倒立','刮胡子','邪恶的笑','不要不要','爱恋中','放大仔细看','偷窥','超高兴','晕','松口气','我跑','享受','修养','哭','汗','啊~','热烈欢迎'];
+	inforBox['tab3']=['HI','KISS','不说','不要','扯花','大心','顶','大惊','飞吻','鬼脸','害羞','口水','狂哭','来','泪眼','流泪','生气','吐舌','喜欢','旋转','再见','抓狂','汗','鄙视','拜','吐血','嘘','打人','蹦跳','变脸','扯肉','吃To','吃花','吹泡泡糖','大变身','飞天舞','回眸','可怜','猛抽','泡泡','苹果','亲','','骚舞','烧香','睡','套娃娃','捅捅','舞倒','西红柿','爱慕','摇','摇摆','杂耍','招财','被殴','被球闷','大惊','理想','欧打','呕吐','碎','吐痰'];
+	inforBox['tab4']=['','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','','',''];
+//大对象
+FaceHandler={
+		imageFolders
+			:{	tab0:'jd/',tab1:'tsj/',tab2:'ldw/',tab3:'bobo/',tab4:'face/'},
+		imageReviewFolders
+			:{	tab0:'jd_review/',tab1:'tsj_review/',tab2:'ldw_review/',tab3:'bobo_review/',tab4:'face/'},
+		imageWidth
+			:{	tab0:35,tab1:35,tab2:35,tab3:35,tab4:35},
+		imageCols
+			:{	tab0:7,tab1:7,tab2:7,tab3:7,tab4:7},
+		imageColWidth		/*parseInt( 100 / iCols, 10 )*/
+			:{	tab0:3,tab1:3,tab2:3,tab3:3,tab4:3},
+		imageCss
+			:{ tab0:'jd',tab1:'tsj',tab2:'ldw',tab3:'bb',tab4:'pp'},
+		imageCssOffset
+			:{tab0:35,tab1:35,tab2:35,tab3:35,tab4:25},
+		tabExist
+			:[0,0,0,0,0]
+	};
+/*-----------------------------------------
+切换Tab层
+-----------------------------------------*/
+function switchTab(index){
+	//不存在,则现生成
+	if(FaceHandler.tabExist[index]==0){
+		FaceHandler.tabExist[index]=1;
+		createTab('tab'+index);
+	}
+	//获取呈现元素句柄数组
+	var tabMenu=$G("tabMenu").getElementsByTagName("div");
+	var tabContent=$G("tabContent").getElementsByTagName("div");
+	//隐藏所有呈现元素
+	for(var i=0,L=tabMenu.length;i<L;i++){
+		tabMenu[i].className="menuDefault";
+		tabContent[i].style.display="none";
+	}
+	//显示对应呈现元素
+	tabMenu[index].className="menuFocus";
+	tabContent[index].style.display="block";
+}
+/*---------------------------------------
+生成Tab曾呈现元素
+-----------------------------------------*/
+function createTab(tabName){    
+	//获取将要生成的Div句柄
+	var tab=$G(tabName);	
+    //获取显示表情和预览表情的路径
+	var imagePath=sBasePath+FaceHandler.imageFolders[tabName];
+	var imageReviewPath=sBasePath+FaceHandler.imageReviewFolders[tabName];
+	//每行显示的表情个数
+	var imageColsNum=FaceHandler.imageCols[tabName];
+	//中间数
+	var positionLine=imageColsNum/2;
+	//图片长宽
+	var iWidth=iHeight=FaceHandler.imageWidth[tabName];
+	//表格剩余空间的显示比例
+	var iColWidth=FaceHandler.imageColWidth[tabName];
+	
+	var tableCss=FaceHandler.imageCss[tabName];
+	var cssOffset=FaceHandler.imageCssOffset[tabName];
+	
+	var textHTML=['<table cellpadding="1" cellspacing="1" align="center" style="border-collapse:collapse;" border="1" bordercolor="#B8B3FF" width="100%" height="100%">'];
+	for(var i=0,imgNum=faceBox[tabName].length;i<imgNum;){
+		textHTML.push('<tr>');
+		for(var j = 0,imgColNum=FaceHandler.imageCols[tabName];j<imgColNum;j++,i++){
+			var faceImage=faceBox[tabName][i];
+			if ( faceImage ){
+				var sUrl = imagePath + faceImage ;
+				var sReviewUrl = imageReviewPath + faceImage ;
+				var posflag=j<positionLine?0:1;
+                	var offset=cssOffset*i*(-1)-1;
+                	var infor=inforBox[tabName][i];
+ 
+textHTML.push('<td  class="'+tableCss+'"   border="1" width="' + iColWidth+ '%" style="border-collapse:collapse;" align="center"  bgcolor="#FFFFFF" onclick="InsertSmiley(\'' + sUrl.replace(/'/g, "\\'" ) + '\')" onmouseover="over(this,\''+sUrl+'\',\''+posflag+'\')" onmouseout="out(this)">');
+textHTML.push('<a class="img" href="javascript:void(0)" style="display:block;text-decoration:none;background-position:left '+offset+'px;" title="'+infor+'">&nbsp;</a>');
+ 
+			}else{
+				//src="'+sBasePath+'default/0.gif" width="'+iWidth+'" height="'+iHeight+'"></img>');
+            	textHTML.push('<td width="' + iColWidth + '%"   bgcolor="#FFFFFF">');
+			}
+			textHTML.push('</td>');
+		}
+		textHTML.push('</tr>');
+	}
+	textHTML.push('</table>');
+	textHTML=textHTML.join("");
+ 
+	tab.innerHTML=textHTML;
+}
+</script>
+</head>
+<body style="margin:0px; padding:8px; background-color:#F1F1E3;font-size:12px;">
+<div id="tabPanel">
+		<div id="tabContent">
+				<div id="tab0" >tabContent0</div>
+				<div id="tab1" >tabContent1</div>
+				<div id="tab2" >tabContent2</div>
+				<div id="tab3" >tabContent3</div>
+				<div id="tab4" >tabContent4</div>
+		</div><!-- End tabContent-->
+	
+		<div id="tabMenu">
+				<div id="tab0" class="menuHide" onClick="switchTab(0)"><u>精选</u></div>		
+				<div id="tab1" onClick="switchTab(1)"><u>兔斯基</u></div>
+				<div id="tab2" onClick="switchTab(2)"><u>绿豆蛙</u></div>
+				<div id="tab3" onClick="switchTab(3)"><u>BOBO</u></div>
+				<div id="tab4" onClick="switchTab(4)"><u>泡泡</u></div>
+		</div><!-- End tabMenu-->
+</div><!-- End tabPanel-->
+<div id="tabIconReview">
+		<img id='faceReview' class='review'/>
+</div><!-- End tabIconReview-->
+<script type="text/javascript"> 
+	switchTab(0);
+    $G("tabIconReview").style.display='none';
+    $G("faceReview").src='http://static.tieba.baidu.com/tb/editor/images/default/0.gif';
+</script>
+</body>
+</html>

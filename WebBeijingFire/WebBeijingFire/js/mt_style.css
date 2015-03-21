@@ -1,0 +1,30 @@
+.mtDropdownMenu {
+	POSITION: absolute; MARGIN-TOP: 4px; OVERFLOW: hidden; TOP: -1000px; LEFT: -1000px
+}
+.mtDropdownMenu .content {
+	POSITION: absolute
+}
+.mtDropdownMenu .items {
+	Z-INDEX: 2; BORDER-BOTTOM: #999 1px solid; POSITION: relative; BORDER-LEFT: #999 1px solid; BORDER-TOP: #999 1px solid; TOP: 0px; BORDER-RIGHT: #999 1px solid; LEFT: 0px
+}
+.top .items {
+	COLOR: #ffffff
+}
+.mtDropdownMenu .item {
+	BORDER-BOTTOM: medium none; BORDER-LEFT: medium none; COLOR: #4a4b4b; FONT-SIZE: 12px; BORDER-TOP: medium none; CURSOR: hand; BORDER-RIGHT: medium none; TEXT-DECORATION: none
+}
+.mtDropdownMenu .background {
+	Z-INDEX: 1; POSITION: absolute; FILTER: alpha(opacity=85); TOP: 0px; LEFT: 0px; moz-opacity: .8
+}
+.mtDropdownMenu .shadowRight {
+	Z-INDEX: 3; POSITION: absolute; FILTER: alpha(opacity=40); WIDTH: 2px; TOP: 3px; moz-opacity: .4
+}
+.mtDropdownMenu .shadowBottom {
+	Z-INDEX: 1; POSITION: absolute; FILTER: alpha(opacity=40); HEIGHT: 2px; LEFT: 3px; moz-opacity: .4
+}
+.mtDropdownMenu .hover {
+	BACKGROUND: #ffffff; COLOR: #ff9900
+}
+.mtDropdownMenu .item IMG {
+	MARGIN-LEFT: 12px
+}

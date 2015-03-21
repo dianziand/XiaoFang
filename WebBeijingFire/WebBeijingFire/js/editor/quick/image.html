@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN" >
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=gbk">
+<style> 
+a{color:#261CDC}
+</style>
+<script type="text/javascript"> 
+ 
+//document.domain = "baidu.com";
+ 
+try{document.execCommand("BackgroundImageCache",false,true);}catch(e) {}
+ 
+String.prototype.trim=function(){return this.replace(/(^[\s\t\xa0\u3000]+)|([\u3000\xa0\s\t]+$)/g, "")};
+String.prototype.getByteLength=function(){return this.replace(/[^\x00-\xff]/g, "mm").length;};
+ 
+TiImage = {
+    IE : (!!(window.attachEvent && !window.opera)),
+    accept: function (){
+        try{
+ 
+        var editor = parent.BdeText;
+		var img_tip = document.getElementById('bde_img_tip');
+		var img_url = document.getElementById('bde_img_url');
+		var img_url_value = img_url.value.trim();
+		img_url_value = img_url_value.replace(/^http:\/\/http:\/\//g, "http://");
+ 
+		var urlexp = /^(https:\/\/|http:\/\/|ftp:\/\/|rtsp:\/\/|mms:\/\/)/;
+		if(!(urlexp.test(img_url_value.toLowerCase()))){
+			img_url_value = "http://" + img_url_value;
+		}
+		
+		var lower_url = img_url_value.toLowerCase();
+		if(lower_url.length <= 0 
+			|| lower_url == "https://" 
+			|| lower_url == "http://" 
+			|| lower_url == "ftp://"
+			|| lower_url == "rtsp://"
+			|| lower_url == "mms://"){
+ 
+			img_tip.innerHTML = "图片链接不能为空";
+			return false;
+		}
+		
+		urlexp = /(.jpg|.jpeg|.bmp|.png|.gif|.tif)$/;
+		
+		if(img_url_value.getByteLength() > editor.urlLength || (!urlexp.test(lower_url))){
+			img_tip.innerHTML = "输入链接有误，请重试";
+			return false;
+		}
+		
+		editor.closePopup();
+		this.execute(editor, img_url_value);
+ 
+        }catch(e){}
+        
+        return false;
+	},
+	execute : function(editor, url){
+ 
+		var html = '<img class="BDE_Image" changedsize="false" src="' + editor.formatURL(url) + '">';
+		editor.paste(html);
+		
+		editor.dispatch("oneditorselectionchange");
+	},
+	onFocusInput : function(){
+		document.getElementById('bde_img_tip').innerHTML = "";
+	}
+};
+ 
+ 
+window.onload = function(){
+	var input = document.getElementById('bde_img_url');
+	input.focus();
+    try{
+	    if(TiImage.IE){
+			input.select();
+		}else{
+			input.setSelectionRange(0, input.value.length);
+		}
+	}catch(e){}
+};
+ 
+ 
+ 
+</script>
+</head>
+<body style="margin:0;">
+<form action="#" onSubmit="return TiImage.accept()"><table cellpadding="2" cellspacing="0" border="0" width="100%" style="margin: 5px 12px 10px 12px;font-size:12px">
+<tr><td colspan="3" style="color:#666666;height:32px;font-size:12px">注意：一层楼最多可插入<script>document.write(parent.g_pg.imageLimite);</script>张图片<span id="noMemTip"></span></td></tr>
+<tr><td width="70px">图片链接：</td><td width="340px"><input type="text" name="bde_img_url" id="bde_img_url" oncontextmenu="this.select()" onClick="this.select()" value="http://" style="width:335px" onFocus="TiImage.onFocusInput();"></td><td>（<a href="http://static.tieba.baidu.com/tb/help/new/index.html#n4" target="_blank">如何贴图？</a>）</td></tr>
+<tr><td>&nbsp;</td><td><div id="bde_img_tip" style="color:#ff0000;font-size:12px">&nbsp;</div></td></tr>
+<tr><td colspan="3"><input type="submit" name="insertAccept" id="insertAccept" value="插入图片"></td></tr>
+</table>
+</form>
+</body>
+</html>
