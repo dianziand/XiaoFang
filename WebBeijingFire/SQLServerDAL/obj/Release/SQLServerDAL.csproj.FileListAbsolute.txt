@@ -5,3 +5,10 @@ E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\bin\Release\Entit
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.csprojResolveAssemblyReference.cache
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.dll
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\bin\Release\SQLServerDAL.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\bin\Release\SQLServerDAL.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\bin\Release\Entity.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\bin\Release\Entity.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.csprojResolveAssemblyReference.cache
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\SQLServerDAL\obj\Release\SQLServerDAL.pdb

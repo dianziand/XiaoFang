@@ -7,3 +7,12 @@ E:\工作\code\WebBeijingFire.root\WebBeijingFire\Business\bin\Release\SQLServer
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Business\obj\Release\Business.dll
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Business\obj\Release\Business.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\Business.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\Business.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\Entity.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\SQLServerDAL.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\Entity.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\bin\Release\SQLServerDAL.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\obj\Release\Business.csprojResolveAssemblyReference.cache
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\obj\Release\Business.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Business\obj\Release\Business.pdb

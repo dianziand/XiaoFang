@@ -3,3 +3,8 @@ E:\工作\code\WebBeijingFire.root\WebBeijingFire\Entity\bin\Release\Entity.pdb
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Entity\obj\Release\Entity.dll
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Entity\obj\Release\Entity.pdb
 E:\工作\code\WebBeijingFire.root\WebBeijingFire\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Entity\bin\Release\Entity.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Entity\bin\Release\Entity.pdb
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Entity\obj\Release\Entity.dll
+K:\工作\codeGit\XiaoFang\WebBeijingFire\Entity\obj\Release\Entity.pdb
